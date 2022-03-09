@@ -121,7 +121,7 @@ app.put('/api/product/questions/answers/report', (req, res) => {
 app.get('/api/product/reviews', (req, res) => {
   axios({
     method: 'get',
-    url: `https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/?product_id=${req.query.product_id}`,
+    url: `https://34.239.113.132/reviews/?product_id=${req.query.product_id}`,
     headers: { Authorization: API_KEY },
   })
     .then((results) => {
@@ -136,7 +136,7 @@ app.get('/api/product/reviews', (req, res) => {
 app.get('/api/product/reviews/meta', (req, res) => {
   axios({
     method: 'get',
-    url: `https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/meta/?product_id=${req.query.product_id}`,
+    url: `https://34.239.113.132/reviews/meta/?product_id=${req.query.product_id}`,
     headers: { Authorization: API_KEY },
   })
     .then((results) => {
